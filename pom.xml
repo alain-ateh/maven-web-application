@@ -132,7 +132,19 @@
 					</webApp>
 				</configuration>
 			</plugin>
+			<plugin>
+                               <groupId>org.apache.maven.plugins</groupId>
+                               <artifactId>maven-war-plugin</artifactId>
+                               <version>3.3.2</version> </plugin>
+                               <configuration>
+                                       <downloadSources>true</downloadSources>
+                                       <downloadJavadocs>true</downloadJavadocs>
+                                       <wtpversion>2.0</wtpversion>
+                                       <wtpContextName>maven-web-application</wtpContextName>
+                               </configuration>
+                        </plugin>
 
+<!--
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-eclipse-plugin</artifactId>
@@ -144,7 +156,7 @@
 					<wtpContextName>maven-web-application</wtpContextName>
 				</configuration>
 			</plugin>
-			
+-->			
 </plugins>
 	</build>
 	
